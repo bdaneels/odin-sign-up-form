@@ -14,22 +14,26 @@ textarea{
     height:2rem;
     padding:0;
     margin:0;
+
 }
 
 input{
     border: 2px lightgrey solid;
     border-radius: 5px;
+    background-color: rgb(240, 238, 235, 0.1)
 }
 
 input:focus{
     border:1.5px blue solid;
     box-shadow: 0px 0px 4px black;
+    background-color:white;
 
 }
 
 body{
     display: flex;
     font-family: Roboto, sans-serif;
+    margin:0;
 }
 
 .background-img-container{
@@ -78,11 +82,16 @@ body{
     font-weight: 600;
 }
 
-.bot-container,
+.bot-container{
+    display:flex;
+    flex-direction:column;
+    height:20vh;
+}
+
 .top-container,
 .form-container{
    display:flex;
-   height: 33vh;
+   height: 40vh;
 
 }
 
@@ -97,6 +106,7 @@ body{
     flex-direction:column;
     margin-bottom:1.5rem;
     margin-right:6rem;
+    padding:0.4rem;
 }
 .form-row-container{
     display:flex;
@@ -108,4 +118,13 @@ body{
     display:flex;
     flex-direction:column;
     padding-left:1rem;
+}
+
+button[type="submit"]{
+    margin-left:1rem;
+    margin-top: 1rem;
+    padding:1rem;
+    text-align: center;
+    font-size:1rem;
+    border-radius: 5px;
 }
