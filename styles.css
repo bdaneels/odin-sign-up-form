@@ -1,11 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea{
+    font-family: inherit;
+    font-size 100%;
+    width: 270px;
+    height:2rem;
+    padding:0;
+    margin:0;
+}
+
+input{
+    border: 2px lightgrey solid;
+    border-radius: 5px;
+}
+
+input:focus{
+    border:1.5px blue solid;
+    box-shadow: 0px 0px 4px black;
+
+}
+
+body{
+    display: flex;
+    font-family: Roboto, sans-serif;
+}
+
 .background-img-container{
     position:relative;
     height:100vh;
-    max-width:750px;
+    min-width: 750px;
     display: flex;
     background-image:url('./images/background-img.jpg');
     back-ground-size: 100% 100%;
-    border:1px solid red;
 
 }
 
@@ -25,4 +58,54 @@
     text-align: center;
     font-size: 5rem;
     justify-content:center;
+}
+
+.main-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.top-container{
+    flex-direction:column;
+}
+.text-container{
+    display:flex;
+    flex-direction:column;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+    min-width:200px;
+    font-weight: 600;
+}
+
+.bot-container,
+.top-container,
+.form-container{
+   display:flex;
+   height: 33vh;
+
+}
+
+
+.bot-container,
+.top-container{
+    background-color: #F1F1F1;
+    
+}
+.form-row{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:1.5rem;
+    margin-right:6rem;
+}
+.form-row-container{
+    display:flex;
+    flex-direction:row
+}
+
+.form-container{
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    padding-left:1rem;
 }
