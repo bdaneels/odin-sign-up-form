@@ -1,0 +1,28 @@
+.background-img-container{
+    position:relative;
+    height:100vh;
+    max-width:750px;
+    display: flex;
+    background-image:url('./images/background-img.jpg');
+    back-ground-size: 100% 100%;
+    border:1px solid red;
+
+}
+
+.logo{
+    height:10%;
+    width:10%;
+}
+
+.logo-container {
+    background: rgb(0,0,0, 0.3 );
+    color: white; 
+    display: flex;
+    flex-direction:row;
+    position:absolute;
+    width:750px;
+    top: 15rem;
+    text-align: center;
+    font-size: 5rem;
+    justify-content:center;
+}
