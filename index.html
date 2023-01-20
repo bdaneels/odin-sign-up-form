@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-row">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>   
+                    <input pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" type="password" id="password" name="password" required>   
                 </div>
             </div>
 
@@ -61,7 +61,7 @@
     </div>
     <div class="bot-container">
         <button type="submit">Create Account</button>
-        <div>ALlready have an account? Log in</div>
+        <div class="text-container login-text flex-row">Allready have an account? <span style="margin-left: 0.5rem" class="color-bold">Log in</span></div>
     </div>
 
 </form>

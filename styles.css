@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root{
+    --margin-left:2rem;
+}
 *{
     box-sizing: border-box;
 }
@@ -17,6 +20,15 @@ textarea{
 
 }
 
+input:valid{
+    border: 3px green solid;
+}
+
+input[type="password"]:invalid:focus{
+    background-color:red;
+    opacity:0.5;
+}
+
 input{
     border: 2px lightgrey solid;
     border-radius: 5px;
@@ -24,7 +36,7 @@ input{
 }
 
 input:focus{
-    border:1.5px blue solid;
+    border:3px blue solid;
     box-shadow: 0px 0px 4px black;
     background-color:white;
 
@@ -38,11 +50,11 @@ body{
 
 .background-img-container{
     position:relative;
-    height:100vh;
+    height: 100vh;
     min-width: 750px;
     display: flex;
     background-image:url('./images/background-img.jpg');
-    back-ground-size: 100% 100%;
+    background-size: 100% 100%;
 
 }
 
@@ -51,14 +63,15 @@ body{
     width:10%;
 }
 
+
 .logo-container {
-    background: rgb(0,0,0, 0.3 );
+    background: rgb(0,0,0, 0.4   );
     color: white; 
     display: flex;
     flex-direction:row;
     position:absolute;
     width:750px;
-    top: 15rem;
+    top: 14.5rem;
     text-align: center;
     font-size: 5rem;
     justify-content:center;
@@ -76,7 +89,7 @@ body{
     display:flex;
     flex-direction:column;
     margin-top: 7rem;
-    margin-left: 2rem;
+    margin-left: var(--margin-left);
     font-size: 1.4rem;
     min-width:200px;
     font-weight: 600;
@@ -85,13 +98,13 @@ body{
 .bot-container{
     display:flex;
     flex-direction:column;
-    height:20vh;
+    height:30vh;
 }
 
 .top-container,
 .form-container{
    display:flex;
-   height: 40vh;
+   height: 35vh;
 
 }
 
@@ -117,14 +130,40 @@ body{
     background-color: white;
     display:flex;
     flex-direction:column;
-    padding-left:1rem;
+    padding-left: var(--margin-left);
+    box-shadow: 0px 15px 5px  orange;
+}
+
+button[type="submit"]:hover{
+    background-color: #0A2647;
+    color:white;
 }
 
 button[type="submit"]{
-    margin-left:1rem;
+    background-color: #579BB1;
+    font-weight:600;
+    color:white;
+    margin-left:var(--margin-left);
     margin-top: 1rem;
-    padding:1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
-    font-size:1rem;
+    font-size:1.4rem;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.login-text{
+    margin-top:2rem;
+    margin-left:var(--margin-left);
+}
+
+.color-bold{
+    color: #579BB1;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction:row;
 }
