@@ -132,6 +132,9 @@ body{
     flex-direction:column;
     padding-left: var(--margin-left);
     overflow: auto;
+    box-shadow: 1px 18px 21px -11px grey;
+    z-index:10;
+    position: relative;
 }
 
 button[type="submit"]:hover{
